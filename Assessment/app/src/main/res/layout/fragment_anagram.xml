@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chyllson.assessment.AnagramFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#ffffffff">>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout_firstText"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_first_text"
+                android:id="@+id/textView_enterFirstText"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_centerVertical="true" />
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_firstText"
+                android:inputType="text"
+                android:hint="@string/text_hint"
+                android:layout_toRightOf="@+id/textView_enterFirstText" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout_secondText"
+        android:gravity="center"
+            android:layout_below="@+id/relativeLayout_firstText">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_second_text"
+                android:id="@+id/textView_enterSecondText"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_centerVertical="true" />
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_secondText"
+                android:inputType="text"
+                android:hint="@string/text_hint"
+                android:layout_toRightOf="@+id/textView_enterSecondText" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout_secondText"
+            android:id="@+id/relativeLayout_submit"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:id="@+id/button_submitAnagram"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

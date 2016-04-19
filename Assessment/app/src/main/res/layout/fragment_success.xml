@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chyllson.assessment.SuccessFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#ffffff">>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout_success"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/success"
+                android:id="@+id/textView_success"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout_success"
+            android:id="@+id/relativeLayout_tryAgain"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/try_again"
+                android:id="@+id/button_tryAgain"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>
